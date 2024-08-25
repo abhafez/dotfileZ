@@ -14,8 +14,8 @@ static const unsigned int gappiv              = 5;   /* vert inner gap between w
 static const unsigned int gappoh              = 5;   /* horiz outer gap between windows and screen edge */
 static const unsigned int gappov              = 5;   /* vert outer gap between windows and screen edge */
 static int smartgaps                          = 0;   /* 1 means no outer gap when there is only one window */
-static const char *fonts[]                    = { "Maple Mono:size=14", "Noto Color Emoji:size=13", "CoconNextArabic-Light:size=13" };
-static const char dmenufont[]                 = "Maple Mono:size=15";
+static const char *fonts[]                    = { "Recursive Sans Linear Light:size=14", "Noto Color Emoji:size=13", "Montserrat-Arabic:size=13" };
+static const char dmenufont[]                 = "Recursive Sans Linear Light:size=15";
 static const char col1[]                      = "#ffffff";
 static const char col2[]                      = "#ffffff";
 static const char col3[]                      = "#ffffff";
@@ -24,23 +24,23 @@ static const char col5[]                      = "#ffffff";
 static const char col6[]                      = "#ffffff";
 static const char col_gray1[]                 = "#181825";
 static const char col_gray2[]                 = "#6C6990";
-static const char col_gray3[]                 = "#6C6990";
+static const char col_gray3[]                 = "#9399b2";
 static const char col_gray4[]                 = "#1E1D2D";
 static const char col_cyan[]                  = "#282737";
 static const char col_black[]                 = "#1E1D2D";
 static const char col_blue[]                  = "#96CDFB"; /* focused window border */
 static const char col_green[]                 = "#ABE9B3";
-static const char col_accent[]                = "#94E2D5";
+static const char col_accent[]                = "#94e2d5";
 static const char col_orange[]                = "#F8BD96";
 static const char col_yellow[]                = "#FAE3B0";
 static const char col_teal[]                  = "#94E2D5";
 static const char col_sapphire[]              = "#89B4FA";
-static const char col_blu[]                   = "#008080";
+static const char col_blu[]                   = "#1e66f5";
 static const char col_borderbar[]             = "#1E1D2D"; /* inner border */
 
 static const char *colors[][3] = {
     /*               fg         bg         border   */
-    [SchemeNorm] = { col_accent, col_gray1, col_gray2 },
+    [SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
     [SchemeSel]  = { col_accent, col_black, col_accent },
 };
 
