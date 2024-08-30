@@ -1,0 +1,298 @@
+{
+  // #region Window
+  "window.menuBarVisibility": "hidden",
+  "window.enableMenuBarMnemonics": false,
+  "window.customMenuBarAltFocus": false,
+  "window.titleSeparator": "✨ ",
+  "window.title": "${dirty} ${separator} ${rootName}",
+  "window.restoreWindows": "preserve",
+  "window.customTitleBarVisibility": "windowed",
+  "window.titleBarStyle": "custom",
+  // #endregion
+  // #region Editor
+  "editor.bracketPairColorization.enabled": true,
+  "editor.matchBrackets": "always",
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "on",
+    "strings": "on"
+  },
+  "editor.fontWeight": "400",
+  "editor.fontLigatures": true,
+  "editor.autoClosingBrackets": "never",
+  "editor.fontSize": 15,
+  "editor.minimap.enabled": false,
+  "editor.hover.enabled": false,
+  "editor.guides.bracketPairs": "active",
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorWidth": 2,
+  "editor.fontFamily": "'Recursive Sans Linear Light', 'Maple Mono', 'Montserrat-Arabic', 'Twemoji', 'FontAwesome', 'Droid Sans Mono', 'monospace', monospace",
+  "editor.accessibilitySupport": "off",
+  "editor.codeLensFontFamily": "'Maple Mono', 'MesloLGM NF', 'JetBrainsMonoNL Nerd Font'",
+  "editor.inlayHints.fontFamily": "'Maple Mono'",
+  "editor.inlayHints.fontSize": 14,
+  // #endregion
+  // #region Workbench
+  "workbench.editor.enablePreview": false,
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.settings.editor": "json",
+  "workbench.productIconTheme": "feather-vscode",
+  "workbench.iconTheme": "catppuccin-mocha",
+  "workbench.list.openMode": "singleClick",
+  "workbench.editor.openSideBySideDirection": "down",
+  "workbench.colorCustomizations": {
+    // "editor.background": "#181825",
+    "breadcrumb.background": "#181825",
+    "breadcrumb.foreground": "#f38ba8",
+    "statusBar.noFolderBackground": "#cba6f7",
+    "statusBar.debuggingBackground": "#f38ba8",
+    "statusBar.foreground": "#ffffff",
+    "statusBar.debuggingForeground": "#ffffff"
+  },
+  // #endregion
+  // #region Catppuccin
+  "catppuccin.bracketMode": "neovim",
+  "catppuccin.italicKeywords": false,
+  "catppuccin.italicComments": false,
+  "catppuccin.accentColor": "sky",
+  "catppuccin.boldKeywords": false,
+  "catppuccin.workbenchMode": "flat",
+  "catppuccin.extraBordersEnabled": true,
+  // #endregion
+  // #region Search
+  "search.exclude": {
+    "build/": true,
+    "dist": true,
+    "node_modules": true,
+    "**/node_modules": true,
+    "package-lock.json": true
+  },
+  // #endregion
+  // #region Explorer
+  "explorer.compactFolders": false,
+  "explorer.autoOpenDroppedFile": true,
+  "explorer.autoReveal": "focusNoScroll",
+  "explorer.autoRevealExclude": {
+    "**/node_modules": true,
+    "**/bower_components": true
+  },
+  "explorer.confirmDelete": true,
+  "editor.experimentalInlineEdit.fontFamily": "Recursive Sans Linear Light",
+  "explorer.confirmDragAndDrop": true,
+  "explorer.confirmPasteNative": true,
+  "explorer.confirmUndo": "verbose",
+  "explorer.copyRelativePathSeparator": "/",
+  "explorer.decorations.badges": true,
+  "explorer.decorations.colors": true,
+  "explorer.enableDragAndDrop": true,
+  "explorer.enableUndo": true,
+  "explorer.excludeGitIgnore": false,
+  "explorer.expandSingleFolderWorkspaces": true,
+  "explorer.fileNesting.enabled": false,
+  "explorer.fileNesting.expand": true,
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.tsx": "${capture}.ts",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
+    "Cargo.toml": "Cargo.lock"
+  },
+  "explorer.incrementalNaming": "smart",
+  "explorer.openEditors.minVisible": 0,
+  "explorer.openEditors.visible": 9,
+  "explorer.sortOrder": "type",
+  "explorer.sortOrderLexicographicOptions": "upper",
+  // #endregion
+  // #region Highlight matching tag
+  "highlight-matching-tag.enabled": true,
+  "highlight-matching-tag.highlightFromAttributes": true,
+  "highlight-matching-tag.highlightFromContent": true,
+  "highlight-matching-tag.highlightFromName": true,
+  "highlight-matching-tag.highlightSelfClosing": true,
+  "highlight-matching-tag.noDefaultEmptyElements": true,
+  "highlight-matching-tag.showPath": true,
+  "highlight-matching-tag.showRuler": true,
+  "highlight-matching-tag.styles": {
+    "opening": {
+      "left": {
+        "custom": {
+          "borderWidth": "2px 0 2px 2px",
+          "borderStyle": "solid",
+          "borderColor": "#f9e2af",
+          "borderRadius": "1px"
+        }
+      },
+      "right": {
+        "custom": {
+          "borderWidth": "2px 2px 2px 0",
+          "borderStyle": "solid",
+          "borderColor": "#f9e2af",
+          "borderRadius": "1px"
+        }
+      }
+    }
+  },
+  // #endregion
+  // #region Languages
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // #endregion
+  // #region terminal
+  "terminal.integrated.env.linux": {},
+  "terminal.integrated.fontFamily": "'Recursive Sans Linear Light', 'MesloLGM NF', 'JetBrainsMonoNL Nerd Font'",
+  // #endregion
+  // #region Atlassian
+  "atlascode.jira.enabled": true,
+  "atlascode.bitbucket.enabled": false,
+  "atlascode.jira.jqlList": [
+    {
+      "id": "daa0e300-ff9c-4994-9f45-46f12779a1e3",
+      "enabled": true,
+      "name": "My aanaab Issues",
+      "query": "assignee = currentUser() AND resolution = Unresolved ORDER BY lastViewed DESC",
+      "siteId": "2f6496c7-85ed-4e7e-b778-a8f2fd202729",
+      "monitor": true
+    }
+  ],
+  "atlascode.jira.explorer.fetchAllQueryResults": true,
+  // #endregion
+
+  // #region Git Graph
+  "git-graph.graph.colours": [
+    "#dc8a78",
+    "#ea76cb",
+    "#8839ef",
+    "#e64553",
+    "#179299",
+    "#04a5e5",
+    "#7287fd",
+    "#6c6f85",
+    "#dd7878",
+    "#d20f39",
+    "#8839ef",
+    "#df8e1d"
+  ],
+  "git-graph.graph.style": "angular",
+  "git-graph.commitDetailsView.autoCenter": false,
+  "git-graph.commitDetailsView.fileView.fileTree.compactFolders": false,
+  "git-graph.date.format": "Relative",
+  "git-graph.date.type": "Author Date",
+  // #endregion
+  // #region cSpell
+  "cSpell.userWords": [
+    "atlascode",
+    "autofetch",
+    "Autofix",
+    "capslock",
+    "Catppuccin",
+    "colours",
+    "endregion",
+    "esbenp",
+    "hafez",
+    "lockb",
+    "macchiato",
+    "Meslo",
+    "neovim",
+    "numpad",
+    "nvim",
+    "scminput"
+  ],
+  "cSpell.language": "en, ar",
+  // #endregion
+  // #region git
+  "git.autofetch": true,
+  "git.confirmSync": true,
+  "yaml.schemas": {
+    "file:///home/hafez/.vscode/extensions/atlassian.atlascode-3.0.10/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+  },
+  // #endregion
+  // #region Playwright
+  "playwright.reuseBrowser": true,
+  "playwright.showTrace": false,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  // #endregion
+  // #region better comments
+  "better-comments.highlightPlainText": true,
+  "better-comments.multilineComments": true,
+  "better-comments.tags": [
+    {
+      "tag": "!",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "?",
+      "color": "#3498DB",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "//",
+      "color": "#474747",
+      "strikethrough": true,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "todo",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "x",
+      "color": "#98C379",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    }
+  ]
+  // #endregion
+}

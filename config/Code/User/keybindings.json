@@ -1,0 +1,190 @@
+// Place your key bindings in this file to override the default is []
+[
+  // #region Zooms
+  {
+    "key": "ctrl+shift+down",
+    "command": "workbench.action.zoomOut"
+  },
+  {
+    "key": "ctrl+numpad_subtract",
+    "command": "-workbench.action.zoomOut"
+  },
+  {
+    "key": "ctrl+=",
+    "command": "editor.action.fontZoomIn"
+  },
+  {
+    "key": "ctrl+-",
+    "command": "editor.action.fontZoomOut"
+  },
+  {
+    "key": "ctrl+0 ctrl+0",
+    "command": "workbench.action.zoomReset"
+  },
+  {
+    "key": "ctrl+numpad0",
+    "command": "-workbench.action.zoomReset"
+  },
+  // #endregion
+  // #region AUTO FIX & FORMAT
+  {
+    "key": "alt+f alt+f",
+    "command": "eslint.executeAutofix"
+  },
+  // #endregion
+  // #region CAPS LOCK in vim mode
+  {
+    "key": "capslock",
+    "command": "extension.vim_escape",
+    "when": "editorTextFocus && vim.active && !inDebugRepl"
+  },
+  {
+    "key": "capslock",
+    "command": "vscode-neovim.escape",
+    "when": "editorTextFocus && neovim.init && !dirtyDiffVisible && !findWidgetVisible && !inReferenceSearchEditor && !markersNavigationVisible && !notebookCellFocused && !notificationCenterVisible && !parameterHintsVisible && !referenceSearchVisible && neovim.mode == 'normal' && editorLangId not in 'neovim.editorLangIdExclusions'"
+  },
+  {
+    "key": "capslock",
+    "command": "vscode-neovim.escape",
+    "when": "editorTextFocus && neovim.init && neovim.mode != 'normal' && editorLangId not in 'neovim.editorLangIdExclusions'"
+  },
+  // #endregion
+  // #region OPEN SETTINGS - keybindings.json .. etc
+  {
+    "key": "ctrl+k ctrl+enter",
+    "command": "workbench.action.openSettings"
+  },
+  {
+    "key": "ctrl+,",
+    "command": "-workbench.action.openSettings"
+  },
+  {
+    "key": "ctrl+shift+0 ctrl+shift+-",
+    "command": "editor.action.fontZoomReset"
+  },
+  // #endregion
+  // #region TRAILING Input
+  {
+    "key": "ctrl+;",
+    "command": "-extension.trailing-semicolon",
+    "when": "editorTextFocus"
+  },
+  // #endregion
+  // #region CLEAR SEARCH RESULTS
+  {
+    "key": "alt+backspace alt+backspace",
+    "command": "search.action.clearSearchResults"
+  },
+  // #endregion
+  // #region keep ctrl + escape for terminal toggle
+  {
+    "key": "ctrl+escape",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "terminal.active"
+  },
+  {
+    "key": "ctrl+escape",
+    "command": "-workbench.action.chat.cancel"
+  },
+  {
+    "key": "alt+k",
+    "command": "editor.action.moveLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+i",
+    "command": "editor.action.moveLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+up",
+    "command": "-editor.action.moveLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+j",
+    "command": "editor.action.moveLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+down",
+    "command": "-editor.action.moveLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  // #endregion
+  // #region Ctrl+Enter (DISABLE CONFLICT WITH MY NEW LINE ACTION)
+  {
+    "key": "ctrl+enter",
+    "command": "-github.copilot.generate",
+    "when": "editorTextFocus && github.copilot.activated && !commentEditorFocused && !inInteractiveInput && !interactiveEditorFocused"
+  },
+  {
+    "key": "enter",
+    "command": "editor.action.inlineSuggest.commit",
+    "when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "-task.new",
+    "when": "editorTextFocus"
+  },
+  // #endregion
+  // #region NO NEED
+  {
+    "key": "ctrl+q",
+    "command": "-workbench.action.quit"
+  },
+  {
+    "key": "ctrl+m ctrl+m",
+    "command": "workbench.action.maximizeEditorHideSidebar"
+  },
+  {
+    "key": "ctrl+shift+up",
+    "command": "workbench.action.zoomIn"
+  },
+  {
+    "key": "ctrl+shift+=",
+    "command": "-workbench.action.zoomIn"
+  },
+  {
+    "key": "alt+w alt+a",
+    "command": "cSpell.addWordToUserSettings"
+  },
+  {
+    "key": "alt+q alt+a",
+    "command": "cSpell.addIgnoreWordsToUser"
+  },
+  {
+    "key": "alt+e alt+u",
+    "command": "editor.emmet.action.updateTag"
+  },
+  {
+    "key": "alt+e alt+backspace",
+    "command": "editor.emmet.action.removeTag"
+  },
+  {
+    "key": "alt+e alt+n",
+    "command": "editor.emmet.action.selectNextItem"
+  },
+  {
+    "key": "alt+e alt+e",
+    "command": "editor.emmet.action.matchTag"
+  },
+  {
+    "key": "alt+e alt+p",
+    "command": "editor.emmet.action.nextEditPoint"
+  },
+  {
+    "key": "alt+e alt+w",
+    "command": "editor.emmet.action.wrapWithAbbreviation"
+  },
+  {
+    "key": "ctrl+shift+-",
+    "command": "workbench.action.zoomOut"
+  },
+  {
+    "key": "ctrl+shift+=",
+    "command": "workbench.action.zoomIn"
+  }
+  // #endregion
+]

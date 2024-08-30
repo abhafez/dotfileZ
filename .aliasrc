@@ -1,0 +1,72 @@
+#############
+# VOID Linux
+#############
+alias i="doas xbps-install -S"
+alias u="i; doas xbps-install -u xbps; doas xbps-install -u"
+alias q="xbps-query -Rs"
+alias r="doas xbps-remove -R"
+#############
+# shortcuts
+#############
+# beacuse I use different setup for vscode
+alias code="/usr/share/code/bin/code"
+alias vim="nvim"
+alias t="tmux"
+alias calc="node"
+alias ls='lsd'
+alias lsa='lsd -la'
+alias ks='lsd'
+alias cat='bat --theme="Catppuccin Mocha"'
+alias lg='lazygit'
+alias ld='lazydocker'
+#############
+# quick change
+#############
+alias sxkbrc='cd ~/.config/sxhkd/; nvim .;'
+alias vimrc="cd ~/.config/nvim; nvim ."
+alias zshrc='vim ~/.zshrc'
+alias bashrc='vim ~/.bashrc'
+alias aliasrc="vim ~/.aliasrc"
+alias so="source ~/aliasrc"
+#############
+#### exit
+#############
+alias :q="exit"
+alias qq="exit"
+alias :Q="exit"
+#############
+# git
+#############
+alias gs="gss"
+alias gdf="git diff | delta"
+alias co='git branch --sort=-committerdate | fzf --header "Checkout Recent Branch" --preview "git diff {1} --color=always" --pointer="" | xargs git checkout'
+alias cb='git branch --sort=-committerdate | fzf --header "Checkout Recent Branch" --preview "git diff {1} --color=always" --pointer="" | tr -d "\n" | xsel -i -b'
+
+##############
+# Docker
+##############
+alias dco="docker compose"
+alias dps="docker ps"
+alias dpa="docker ps -a"
+alias dl="docker ps -l -q"
+alias dx="docker exec -it"
+# Exit docker
+alias dexit="docker stop \$(docker ps -q)"
+
+alias la=tree
+alias rr='ranger'
+
+# Dirs
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ......="cd ../../../../.."
+
+
+alias reboot="doas reboot"
+# cerca means search in Italian
+alias cerca="history | grep"
+# fzf
+alias vf='nvim $(fzf -m --preview="bat --color=always {}")'
+
