@@ -114,18 +114,22 @@ float alphaUnfocus;
 // OLD COLOR WAS #1E1E2E
 static const char *colorname[] = {
     /* 8 normal colors */
-    "#45475A", "#F38BA8", "#94E2D5", "#F9E2AF", "#89B4FA", "#F38BA8", "#BAC2DE", "#1E1E2E",
+    "#585B70", "#ea76cb", "#179299", "#df8e1d", "#209fb5", "#d20f39", "#4c4f69", "#1E1E2E",
+	
     /* 8 bright colors */
-    "#585B70", "#F38BA8", "#94E2D5", "#F9E2AF", "#89B4FA", "#F38BA8", "#BAC2DE", "#1E1E2E",
+    "#45475A", "#eba0ac", "#94e2d5", "#F9E2AF", "#89dceb", "#b4befe", "#94E2D5", "#BAC2DE",
+    
 
     [256] = "#CDD6F4", /* default foreground colour */
     [257] = "#1E1E2E", /* default background colour */
     [258] = "#1E1E2E", /*575268*/
-    "#add8e6",         /* 256 -> cursor */
+    "#04a5e5",         /* 256 -> cursor */
     "#555555",         /* 257 -> rev cursor*/
     "#1E1E2E",         /* 258 -> bg */
-    "#F5C2E7",         /* 259 -> fg */
+    "#9ca0b0",         /* 259 -> fg */
 };
+
+
 /*
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
