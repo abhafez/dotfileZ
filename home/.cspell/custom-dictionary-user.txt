@@ -1,0 +1,22 @@
+# Custom Dictionary Words
+aanaab
+asvetliakov
+atlascode
+autofetch
+Autofix
+azkar
+azkari
+capslock
+easymotion
+endregion
+gitfilehistory
+incsearch
+keymap
+nohl
+numpad
+nvim
+pagedown
+pageup
+scminput
+sonarlint
+vscodevim

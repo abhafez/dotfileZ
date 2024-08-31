@@ -4,8 +4,9 @@
 #   |_) | | | | |_   | |
 # |  _ <| |_| |  _|  | |
 # |_| \_\\___/|_|   |___|
+##################################################################
 
-super+ alt + r
+super+ e
   rofi -modi "emoji" -show emoji -emoji-format "\{emoji\} \{name\}" -columns 3
 
 super + r
@@ -17,38 +18,53 @@ super + r
 # / __|/ _ \| |_| __\ \ /\ / / _` | '__/ _ \
 # \__ \ (_) |  _| |_ \ V  V / (_| | | |  __/
 # |___/\___/|_|  \__| \_/\_/ \__,_|_|  \___|
+##################################################################
 
-super + shift + r
+super + shift + a
   arandr
 
 super + shift+ p
   pavucontrol
 
 super + shift + f
-  firefox; xdotool key super+1
+  firefox
+
+super + shift + g
+  google-chrome-stable
+
+super + shift + s
+  slack; xdotool key super+9
+
+suport + shift + t
+  telegram-desktop
 
 ##############################################################
+#
 #  __  __  ___  _   _ ___ _____ ___  ____
 # |  \/  |/ _ \| \ | |_ _|_   _/ _ \|  _ \
 # | |\/| | | | |  \| || |  | || | | | |_) |
 # | |  | | |_| | |\  || |  | || |_| |  _ <
 # |_|  |_|\___/|_| \_|___| |_| \___/|_| \_\
+##############################################################
 
 super + m
   bash ~/.screenlayout/monitor_choice.sh
 
+super + shift + l
+  bash ~/.screenlayout/laptop.sh
+
 ##################################################################
-#  ____  _   _ ____  _     ___ ____  _____
-#  VOLUME 
-# 
+#  VOLUME
+#################################################################
+
 XF86AudioRaiseVolume
-  bash ~/.config/sxhkd/scripts/RaiseVolume.sh
+  bash ~/scripts/RaiseVolume.sh
 
 XF86AudioLowerVolume
-  bash ~/.config/sxhkd/scripts/LowerVolume.sh
+  bash ~/scripts/LowerVolume.sh
 
 XF86AudioMute
-  bash ~/.config/sxhkd/scripts/muteAll.sh
+  bash ~//scripts/muteAll.sh
 
 # Change screen brightness
 XF86MonBrightnessUp
@@ -63,7 +79,8 @@ XF86MonBrightnessDown
 #| |_) | |_) || ||  \| | | |   \___ \| |   | |_) |  _| |  _| |  \| |
 #|  __/|  _ < | || |\  | | |    ___) | |___|  _ <| |___| |___| |\  |
 #|_|   |_| \_\___|_| \_| |_|   |____/ \____|_| \_\_____|_____|_| \_|
-## Take a screenshot
+###################################################################
+#
 super + bracketright
     flameshot full -p ~/Pictures/screenshot
 
@@ -77,15 +94,6 @@ super + semicolon
 super + shift + n
   thunar ~
 
-# ##################################################################
-# ____  _   _ ____  _     ___ ____  _____
-# APPS
-
-super + shift + f
-  firefox; xdotool key super+2
-
-super + shift + s
-  slack; xdotool key super+9
 
 # ##################################################################
 # SYSTEM
@@ -96,10 +104,10 @@ super + shift + BackSpace
   doas shutdown -h now
 
 alt + shift + f4
-  bash  ~/.config/sxhkd/scripts/useMonitorSound.sh
+  bash  ~/scripts/useMonitorSound.sh
 
 alt shift + f3
-  bash ~/.config/sxhkd/scripts/useLaptopSound.sh
+  bash ~/scripts/useLaptopSound.sh
 
 supper + esc
   bash ~/scripts/shortcuts.sh
