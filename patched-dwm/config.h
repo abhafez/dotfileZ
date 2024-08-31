@@ -39,13 +39,13 @@ static const char col_blu[]                   = "#1e66f5";
 static const char col_borderbar[]             = "#1E1D2D"; /* inner border */
 
 static const char *colors[][3] = {
-    /*               fg         bg         border   */
-    [SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-    [SchemeSel]  = { col_accent, col_black, col_accent },
+    /*               fg          bg         border   */
+    [SchemeNorm] = { col_gray3,  col_gray1, col_gray2 },
+    [SchemeSel]  = { col_accent, col_black, col_gray3 },
 };
 
 /* tagging */
-static const char *tags[] = {  "", "", "", "", "󱍑", "", "󰮤", "󱍑", "󰒱" };
+static const char *tags[] = {  "", "﬿",  "", "", "", "", "拾", "", "󰒱" };
 
 static const Rule rules[] = {
     /* class                instance    title       tags mask     isfloating   monitor */
@@ -54,6 +54,7 @@ static const Rule rules[] = {
     { "copyq",              NULL,       NULL,       0,            1,           -1 },
     { "Slack",              NULL,       NULL,       1 << 8,       0,           -1 },
     { "telegram-desktop",   NULL,       NULL,       1 << 7,       0,           -1 },
+    { "TelegramDesktop",    NULL,       NULL,       1 << 7,       0,           -1 },
 };
 
 /* layout(s) */
@@ -110,8 +111,8 @@ static const Key keys[] = {
     { MODKEY,                       XK_k,          focusstack,     {.i = -1 } },
     { MODKEY,                       XK_h,          setmfact,       {.f = -0.05} },
     { MODKEY,                       XK_l,          setmfact,       {.f = +0.05} },
-    { MODKEY,                       XK_i,          view_adjacent,  {.i = +1 } },
-    { MODKEY,                       XK_u,          view_adjacent,  {.i = -1 } },
+    { MODKEY,                       XK_Tab,        view_adjacent,  {.i = +1 } },
+    { MODKEY|ShiftMask,             XK_Tab,        view_adjacent,  {.i = -1 } },
     { MODKEY|ShiftMask,             XK_h,          setcfact,       {.f = +0.25} },
     { MODKEY|ShiftMask,             XK_l,          setcfact,       {.f = -0.25} },
     { MODKEY|ShiftMask,             XK_o,          setcfact,       {.f = 0.00} },
@@ -132,13 +133,13 @@ static const Key keys[] = {
     { MODKEY|Mod1Mask|ShiftMask,    XK_9,          incrovgaps,     {.i = -1 } },
     { MODKEY|Mod1Mask,              XK_0,          togglegaps,     {0} },
     { MODKEY|Mod1Mask|ShiftMask,    XK_0,          defaultgaps,    {0} },
-    { MODKEY,                       XK_Tab,        view,           {0} },
+    // { MODKEY,                       XK_Tab,        view,           {0} },
     { MODKEY|ShiftMask,             XK_q,          killclient,     {0} },
     { MODKEY,                       XK_t,          setlayout,      {.v = &layouts[0]} },
     { MODKEY,                       XK_f,          fullscreen,     {0} },
     { MODKEY|ShiftMask,             XK_j,          movestack,      {.i = +1 } },
     { MODKEY|ShiftMask,             XK_k,          movestack,      {.i = -1 } },
-    { MODKEY,                       XK_space,      setlayout,      {0} },
+    { MODKEY,                       XK_space,      setlayout,      {.v = &layouts[12]} },
     { MODKEY|ShiftMask,             XK_space,      togglefloating, {0} },
     { MODKEY,                       XK_0,          view,           {.ui = ~0 } },
     { MODKEY|ShiftMask,             XK_0,          tag,            {.ui = ~0 } },
